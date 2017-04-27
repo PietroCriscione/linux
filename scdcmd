@@ -1,0 +1,5 @@
+#!/bin/bash
+ 
+grep Toscana $1 | cut -f 1 -d"," > toscana.txt
+
+diff -s toscana.txt  $2 
